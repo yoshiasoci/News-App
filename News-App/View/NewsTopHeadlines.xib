@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewsTopHeadlinesViewController" customModule="News_App" customModuleProvider="target">
+            <connections>
+                <outlet property="articleCollectionView" destination="xbK-JK-hD6" id="LRE-gD-uqz"/>
+                <outlet property="view" destination="iN0-l3-epB" id="O3g-Hl-Ige"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="xbK-JK-hD6">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <collectionViewLayout key="collectionViewLayout" id="9ui-L9-nf0" customClass="CustomLayout" customModule="News_App" customModuleProvider="target"/>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="xbK-JK-hD6" secondAttribute="bottom" id="8t9-yf-Uny"/>
+                <constraint firstItem="xbK-JK-hD6" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="9AK-6h-5OR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="xbK-JK-hD6" secondAttribute="trailing" id="V90-a8-Jtl"/>
+                <constraint firstItem="xbK-JK-hD6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="YnY-fD-ZFx"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="153"/>
+        </view>
+    </objects>
+</document>

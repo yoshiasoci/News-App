@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NewsCategoryCell" id="Nch-gq-zlF" customClass="NewsCategoryCollectionViewCell" customModule="News_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="152" height="153"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="crC-qI-pro">
+                <rect key="frame" x="0.0" y="0.0" width="152" height="153"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="general" translatesAutoresizingMaskIntoConstraints="NO" id="WfQ-Va-XSt">
+                        <rect key="frame" x="0.0" y="0.0" width="152" height="153"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entertainment" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kqc-LS-4xu">
+                        <rect key="frame" x="0.0" y="0.0" width="152" height="153"/>
+                        <color key="backgroundColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Kqc-LS-4xu" firstAttribute="leading" secondItem="crC-qI-pro" secondAttribute="leading" id="Oua-Pj-PYv"/>
+                    <constraint firstAttribute="bottom" secondItem="WfQ-Va-XSt" secondAttribute="bottom" id="XPN-KB-5CE"/>
+                    <constraint firstItem="WfQ-Va-XSt" firstAttribute="leading" secondItem="crC-qI-pro" secondAttribute="leading" id="iH4-UP-mgJ"/>
+                    <constraint firstItem="Kqc-LS-4xu" firstAttribute="top" secondItem="crC-qI-pro" secondAttribute="top" id="mqo-cK-sb1"/>
+                    <constraint firstAttribute="bottom" secondItem="Kqc-LS-4xu" secondAttribute="bottom" id="t6a-j1-wh4"/>
+                    <constraint firstAttribute="trailing" secondItem="Kqc-LS-4xu" secondAttribute="trailing" id="uEK-am-LfG"/>
+                    <constraint firstAttribute="trailing" secondItem="WfQ-Va-XSt" secondAttribute="trailing" id="vSo-fU-A8Q"/>
+                    <constraint firstItem="WfQ-Va-XSt" firstAttribute="top" secondItem="crC-qI-pro" secondAttribute="top" id="wFX-Ot-mWK"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="152" height="153"/>
+            <connections>
+                <outlet property="categoryImageView" destination="WfQ-Va-XSt" id="TzE-3o-Q4i"/>
+                <outlet property="categoryNameLabel" destination="Kqc-LS-4xu" id="kcV-D9-wbE"/>
+            </connections>
+            <point key="canvasLocation" x="-11.594202898550726" y="-51.897321428571423"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="general" width="900" height="674"/>
+    </resources>
+</document>
