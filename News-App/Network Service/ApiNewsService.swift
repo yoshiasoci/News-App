@@ -9,7 +9,7 @@
 import Foundation
 import Moya
 
-public let apiKey: String = "9c8fb6aedc804f019f4e93c5047bb594" // <- AccessKey
+public let apiKey: String = "625034703024403c894a614f6fd80623" // <- AccessKey
 
 enum ApiNewsService {
     case getNewsSource(apiKey: String, category: String)
