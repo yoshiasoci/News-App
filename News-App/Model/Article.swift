@@ -14,7 +14,7 @@ struct ArticleResult: Decodable {
 }
 
 struct Article: Decodable {
-    var title: String
+    var title: String?
     var url: String
     var urlToImage: String?
 }
